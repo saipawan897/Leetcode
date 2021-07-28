@@ -6,5 +6,8 @@ class Node:
         self.right = None
         self.val = key
 
-def inorder(root):
-    
+def height(root):
+    if root is None:
+        return 0
+    else:
+        return 1+max(height(root.left),height(root.left))
